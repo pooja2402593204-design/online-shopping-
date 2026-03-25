@@ -1,0 +1,94 @@
+/* Reset and Base Styles */
+• {
+ Margin: 0;
+ Padding: 0;
+ Box-sizing: border-box;
+ Scroll-behavior: smooth;
+}
+Body {
+ Font-family: ‘Arial’, sans-serif;
+ Line-height: 1.6;
+ Background-color: #f4f4f4;
+}
+/* Header Section using Flexbox */
+Header {
+ Background: #2c3e50;
+ Color: white;
+ Padding: 1rem 5%;
+ Position: sticky;
+ Top: 0;
+ z-index: 1000;
+}
+.navbar {
+ Display: flex;
+ Justify-content: space-between;
+ Align-items: center;
+}
+.logo span { color: #3498db; }
+.nav-menu {
+ Display: flex;
+ List-style: none;
+ Gap: 20px;
+}
+.nav-menu a {
+ Color: white;
+ Text-decoration: none;
+ Transition: 0.3s;
+}
+.nav-menu a:hover { color: #3498db; }
+/* Hero Section */
+.hero-section {
+ Height: 60vh;
+ Background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+ url(‘https://images.unsplash.com/photo-1441986300917-
+64674bd600d8?w=1000’);
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ text-align: center;
+}
+/* Product Grid Section */
+.container {
+ Padding: 50px 10%;
+}
+.title { text-align: center; margin-bottom: 30px; }
+.product-grid {
+ Display: grid;
+ Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ Gap: 20px;
+}
+.card {
+ Background: white;
+ Padding: 20px;
+ Border-radius: 8px;
+ Text-align: center;
+ Box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img { width: 100%; border-radius: 5px; }
+.add-btn {
+ Background: #3498db;
+ Color: white;
+ Border: none;
+ Padding: 10px 15px;
+ Margin-top: 10px;
+ Cursor: pointer;
+ Border-radius: 4px;
+}
+/* Services Section */
+.services-section {
+ Background: white;
+ Display: flex;
+ Justify-content: space-around;
+ Padding: 40px 10%;
+ Text-align: center;
+}
+/* Footer */
+Footer {
+ Background: #2c3e50;
+ Color: white;
+ Text-align: center;
+ Padding: 20px;
+}
